@@ -25,7 +25,7 @@ from gradio.blocks import Blocks
 from gradio.events import (
 #   Changeable,
 #   Clearable,
-    Editable,
+#   Editable,
     EventListenerMethod,
     Selectable,
     Streamable,
@@ -39,7 +39,7 @@ _Image.init()  # fixes https://github.com/gradio-app/gradio/issues/2843
 
 @document()
 class Image(
-    Editable,
+#   Editable,
 #   Clearable,
 #   Changeable,
     Streamable,
