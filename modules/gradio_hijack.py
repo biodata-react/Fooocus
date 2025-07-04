@@ -23,7 +23,7 @@ from gradio.components import Component
 from gradio.blocks import Blocks
 # from gradio.deprecation import warn_style_method_deprecation
 from gradio.events import (
-    Changeable,
+#   Changeable,
     Clearable,
     Editable,
     EventListenerMethod,
@@ -41,7 +41,7 @@ _Image.init()  # fixes https://github.com/gradio-app/gradio/issues/2843
 class Image(
     Editable,
     Clearable,
-    Changeable,
+#   Changeable,
     Streamable,
     Selectable,
     Uploadable,
