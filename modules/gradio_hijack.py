@@ -197,7 +197,7 @@ class Image(
             **Component.get_config(self),
         }
 
-    @staticmethodТ
+    @staticmethod
     def update(
         value: Any = None,
         height: int | None = None,
