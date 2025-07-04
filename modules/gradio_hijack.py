@@ -45,7 +45,7 @@ class Image(
 #   Streamable,
 #   Selectable,
 #   Uploadable,
-    IOComponent,
+    Component,
     ImgSerializable,
 #   TokenInterpretable,
 ):
@@ -194,7 +194,7 @@ class Image(
   #          "selectable": self.selectable,
             "show_share_button": self.show_share_button,
             "show_download_button": self.show_download_button,
-            **IOComponent.get_config(self),
+            **Component.get_config(self),
         }
 
     @staticmethod
