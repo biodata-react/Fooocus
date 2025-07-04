@@ -24,7 +24,7 @@ from gradio.blocks import Blocks
 # from gradio.deprecation import warn_style_method_deprecation
 from gradio.events import (
 #   Changeable,
-    Clearable,
+#   Clearable,
     Editable,
     EventListenerMethod,
     Selectable,
@@ -40,7 +40,7 @@ _Image.init()  # fixes https://github.com/gradio-app/gradio/issues/2843
 @document()
 class Image(
     Editable,
-    Clearable,
+#   Clearable,
 #   Changeable,
     Streamable,
     Selectable,
