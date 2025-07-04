@@ -29,7 +29,7 @@ from gradio.events import (
     EventListenerMethod,
 #   Selectable,
 #   Streamable,
-    Uploadable,
+#   Uploadable,
 )
 from gradio.interpretation import TokenInterpretable
 
@@ -44,7 +44,7 @@ class Image(
 #   Changeable,
 #   Streamable,
 #   Selectable,
-    Uploadable,
+#   Uploadable,
     IOComponent,
     ImgSerializable,
     TokenInterpretable,
