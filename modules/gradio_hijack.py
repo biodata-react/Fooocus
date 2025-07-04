@@ -31,7 +31,7 @@ from gradio.events import (
 #   Streamable,
 #   Uploadable,
 )
-from gradio.interpretation import TokenInterpretable
+# from gradio.interpretation import TokenInterpretable
 
 set_documentation_group("component")
 _Image.init()  # fixes https://github.com/gradio-app/gradio/issues/2843
@@ -47,7 +47,7 @@ class Image(
 #   Uploadable,
     IOComponent,
     ImgSerializable,
-    TokenInterpretable,
+#   TokenInterpretable,
 ):
     """
     Creates an image component that can be used to upload/draw images (as an input) or display images (as an output).
@@ -160,7 +160,7 @@ class Image(
             if show_share_button is None
             else show_share_button
         )
-        IOComponent.__init__(
+        super().__init__(
             self,
             label=label,
             every=every,
@@ -175,7 +175,7 @@ class Image(
             value=value,
             **kwargs,
         )
-        TokenInterpretable.__init__(self)
+   #     TokenInterpretable.__init__(self)
 
     def get_config(self):
         return {
