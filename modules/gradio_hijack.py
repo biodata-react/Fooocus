@@ -474,7 +474,7 @@ def blk_ini(self, *args, **kwargs):
     return Blocks.original_init(self, *args, **kwargs)
 
 
-Block.__init__ = blk_ini
+Blocks.__init__ = blk_ini
 
 
 gradio.routes.asyncio = importlib.reload(gradio.routes.asyncio)
