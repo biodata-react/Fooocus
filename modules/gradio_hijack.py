@@ -27,7 +27,7 @@ from gradio.events import (
 #   Clearable,
 #   Editable,
     EventListenerMethod,
-    Selectable,
+#   Selectable,
     Streamable,
     Uploadable,
 )
