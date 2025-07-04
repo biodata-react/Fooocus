@@ -331,6 +331,7 @@ class Image(
         elif isinstance(y, (str, Path)):
             return client_utils.encode_url_or_file_to_base64(y)
         else:
+            print("⚠️ postprocess(): unexpected type:", type(y), y)
             raise ValueError("Cannot process this value as an Image")
 
     def set_interpret_parameters(self, segments: int = 16):
