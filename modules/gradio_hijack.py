@@ -161,7 +161,7 @@ class Image(
             else show_share_button
         )
         super().__init__(
-            self,
+        #   self,
             label=label,
             every=every,
             show_label=show_label,
