@@ -197,9 +197,9 @@ class Image(
             **Component.get_config(self),
         }
 
-    @staticmethod
+    @staticmethodТ
     def update(
-        value: Any | Literal[_Keywords.NO_VALUE] | None = _Keywords.NO_VALUE,
+        value: Any = None,
         height: int | None = None,
         width: int | None = None,
         label: str | None = None,
