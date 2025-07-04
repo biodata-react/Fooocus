@@ -21,7 +21,7 @@ from gradio import processing_utils, utils, Error
 # from gradio.components.base import IOComponent, _Keywords, Block
 from gradio.components import Component
 from gradio.blocks import Blocks
-from gradio.deprecation import warn_style_method_deprecation
+# from gradio.deprecation import warn_style_method_deprecation
 from gradio.events import (
     Changeable,
     Clearable,
@@ -431,16 +431,23 @@ class Image(
             output_scores = (output_scores - min_val) / (max_val - min_val)
         return output_scores.tolist()
 
+    import warnings
+
     def style(self, *, height: int | None = None, width: int | None = None, **kwargs):
         """
         This method is deprecated. Please set these arguments in the constructor instead.
         """
-        warn_style_method_deprecation()
+        warnings.warn(
+            "The `.style()` method is deprecated. Set `height` and `width` in the constructor instead.",
+            DeprecationWarning,
+            stacklevel=2,
+        )
         if height is not None:
             self.height = height
         if width is not None:
             self.width = width
         return self
+
 
     def check_streamable(self):
         if self.source != "webcam":
