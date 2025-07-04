@@ -462,7 +462,7 @@ class Image(
             return input_data
         return str(utils.abspath(input_data))
         
-   def example_inputs(self):
+    def example_inputs(self):
         return [None]
 
 all_components = []
