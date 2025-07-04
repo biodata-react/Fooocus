@@ -461,7 +461,9 @@ class Image(
         ):  # If an externally hosted image, don't convert to absolute path
             return input_data
         return str(utils.abspath(input_data))
-
+        
+   def example_inputs(self):
+        return [None]
 
 all_components = []
 
